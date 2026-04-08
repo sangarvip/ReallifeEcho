@@ -19,11 +19,17 @@ Copy `.env.example` to `.env` and set your public site URL for correct canonical
 NEXT_PUBLIC_SITE_URL=https://your-domain.com
 ```
 
+To enable AdSense globally (adds the official script to every page), set:
+
+```bash
+NEXT_PUBLIC_ADSENSE_CLIENT=ca-pub-5195718945228206
+```
+
 ## Deploy (Railway)
 
 - Build: `npm run build`
 - Start: `npm run start`
-- Set environment variable: `NEXT_PUBLIC_SITE_URL`
+- Set environment variables: `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_ADSENSE_CLIENT` (optional)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 

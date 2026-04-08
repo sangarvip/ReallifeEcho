@@ -161,8 +161,21 @@ export const STORIES: Story[] = [
   },
 ];
 
-export function getStoryBySlug(slug: string): Story | undefined {
-  return STORIES.find((s) => s.slug === slug);
+function normalizeSlug(input: unknown): string | null {
+  if (typeof input !== "string") return null;
+  const trimmed = input.trim();
+  if (!trimmed) return null;
+  try {
+    return decodeURIComponent(trimmed).toLowerCase();
+  } catch {
+    return trimmed.toLowerCase();
+  }
+}
+
+export function getStoryBySlug(slug: unknown): Story | undefined {
+  const normalized = normalizeSlug(slug);
+  if (!normalized) return undefined;
+  return STORIES.find((s) => s.slug === normalized);
 }
 
 export function getStoriesByCategory(category?: StoryCategory): Story[] {

@@ -49,7 +49,11 @@ export default function CategoryPage({
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {stories.map((s) => (
-          <Link key={s.slug} href={`/stories/${s.slug}`} className="group">
+          <Link
+            key={s.slug}
+            href={`/stories/${encodeURIComponent(s.slug)}`}
+            className="group"
+          >
             <Card className="h-full p-6 transition hover:-translate-y-0.5">
               <div className="line-clamp-3 text-pretty text-base font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
                 {s.title}

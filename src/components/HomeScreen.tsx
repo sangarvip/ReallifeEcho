@@ -48,7 +48,10 @@ export function HomeScreen({ stories }: { stories: Story[] }) {
                 Start Reading
               </Button>
             </Link>
-            <Link href={`/stories/${featured.slug}`} className="w-full sm:w-auto">
+            <Link
+              href={`/stories/${encodeURIComponent(featured.slug)}`}
+              className="w-full sm:w-auto"
+            >
               <Button variant="secondary" size="lg" className="w-full sm:w-auto">
                 Read Featured
               </Button>
@@ -81,7 +84,10 @@ export function HomeScreen({ stories }: { stories: Story[] }) {
               <Link href={`/read?slug=${featured.slug}`} className="w-full sm:w-auto">
                 <Button className="w-full sm:w-auto">Open in Reader</Button>
               </Link>
-              <Link href={`/stories/${featured.slug}`} className="w-full sm:w-auto">
+              <Link
+                href={`/stories/${encodeURIComponent(featured.slug)}`}
+                className="w-full sm:w-auto"
+              >
                 <Button variant="secondary" className="w-full sm:w-auto">
                   Open Story Page
                 </Button>
@@ -133,7 +139,11 @@ export function HomeScreen({ stories }: { stories: Story[] }) {
 
           <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {filtered.map((s) => (
-              <Link key={s.slug} href={`/stories/${s.slug}`} className="group">
+              <Link
+                key={s.slug}
+                href={`/stories/${encodeURIComponent(s.slug)}`}
+                className="group"
+              >
                 <Card className="h-full p-6 transition hover:-translate-y-0.5 hover:shadow-[0_22px_65px_-38px_rgba(0,0,0,0.55)]">
                   <div className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
                     {s.category}

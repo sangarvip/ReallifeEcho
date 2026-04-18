@@ -22,11 +22,20 @@ export function ReaderScreen({
 }) {
   const router = useRouter();
 
+  const initialSlugNormalized = React.useMemo(() => {
+    if (!initialSlug) return undefined;
+    try {
+      return decodeURIComponent(initialSlug).trim().toLowerCase();
+    } catch {
+      return initialSlug.trim().toLowerCase();
+    }
+  }, [initialSlug]);
+
   const initialIndex = React.useMemo(() => {
-    if (!initialSlug) return 0;
-    const idx = stories.findIndex((s) => s.slug === initialSlug);
+    if (!initialSlugNormalized) return 0;
+    const idx = stories.findIndex((s) => s.slug === initialSlugNormalized);
     return idx >= 0 ? idx : 0;
-  }, [stories, initialSlug]);
+  }, [stories, initialSlugNormalized]);
 
   const [index, setIndex] = React.useState(initialIndex);
   const [direction, setDirection] = React.useState<1 | -1>(1);
@@ -148,7 +157,7 @@ export function ReaderScreen({
                   <div className="mt-10 flex flex-col items-start justify-between gap-4 border-t border-zinc-200/70 pt-6 dark:border-white/10 sm:flex-row sm:items-center">
                     <ShareButtons title={story.title} text={story.intro} />
                     <Link
-                      href={`/stories/${story.slug}`}
+                      href={`/stories/${encodeURIComponent(story.slug)}`}
                       className="rounded-full bg-zinc-950 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-zinc-900 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-100"
                     >
                       Open SEO story page →

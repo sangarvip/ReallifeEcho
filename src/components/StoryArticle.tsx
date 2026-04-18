@@ -61,7 +61,11 @@ export function StoryArticle({ story }: { story: Story }) {
           </div>
           <div className="mt-4 grid gap-4 sm:grid-cols-3">
             {related.map((s) => (
-              <Link key={s.slug} href={`/stories/${s.slug}`} className="group">
+              <Link
+                key={s.slug}
+                href={`/stories/${encodeURIComponent(s.slug)}`}
+                className="group"
+              >
                 <Card className="h-full p-5 transition hover:-translate-y-0.5">
                   <div className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
                     {s.category}

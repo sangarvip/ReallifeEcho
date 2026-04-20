@@ -253,6 +253,65 @@ export const STORIES: Story[] = [
     question: "How do you rebuild trust after someone breaks it like that?",
     category: "Trust",
     },
+    {
+      id: "s16",
+      slug: "stayed-until-i-became-stranger",
+      title: "I Stayed Until I Didn’t Recognize Myself Anymore",
+      intro: "Loving them slowly erased parts of me I didn’t notice at first.",
+      story: "At the beginning, it didn’t feel like I was losing anything. I was just adjusting. Letting small things go. Changing how I spoke, what I liked, what I ignored. It felt normal—like this is what people do when they care about someone. But over time, those small adjustments turned into silence. I stopped reacting. Stopped arguing. Stopped being fully myself. One day, I caught myself agreeing to something that didn’t sit right with me at all. And the worst part wasn’t that I said yes—it was that it felt easier than saying no. That’s when it hit me. I hadn’t just been loving them. I had been slowly disappearing.",
+      analysis: "Gradual self-abandonment often hides behind the idea of compromise.",
+      lesson: "If love costs you your identity, it’s too expensive.",
+      question: "How do you notice when you’re losing yourself in someone?",
+      category: "Relationship",
+      },
+      
+      {
+      id: "s17",
+      slug: "silence-after-being-available",
+      title: "The Silence After I Stopped Being Available",
+      intro: "I thought I mattered. Turns out, my availability did.",
+      story: "I used to reply instantly. Always pick up. Always make time. No matter what I was doing. It felt like the right thing to do. Like I was being a good friend, a good partner, a good person. But one day, I couldn’t. I was tired. Drained. I needed space. So I pulled back a little. Not completely—just enough to breathe. That’s when everything changed. The calls stopped. The messages got shorter. The effort disappeared. It wasn’t loud. No argument, no clear ending. Just distance. And in that quiet, I understood something I wish I hadn’t—some people don’t miss you. They miss how available you were to them.",
+      analysis: "The connection was tied to convenience, not genuine care.",
+      lesson: "If your absence feels like peace to them, your presence wasn’t valued.",
+      question: "How do you tell if someone values you or just your presence in their life?",
+      category: "Relationship",
+      },
+      
+      {
+      id: "s18",
+      slug: "waiting-for-effort-that-never-came",
+      title: "I Kept Waiting for Effort That Never Came",
+      intro: "I thought patience would fix what effort never did.",
+      story: "I kept telling myself, ‘give it time.’ Maybe they’re busy. Maybe they’re dealing with something. Maybe things will get better. I had an explanation for everything. Days without effort, conversations that felt one-sided, plans that never happened. I kept waiting for things to feel the way they used to. Or maybe the way I imagined they could be. But nothing really changed. Just my tolerance did. I accepted less and called it understanding. I stayed longer and called it loyalty. Until one day I had to admit something uncomfortable—I wasn’t being patient. I was just avoiding the truth.",
+      analysis: "Hope replaced reality, leading to prolonged emotional neglect.",
+      lesson: "Waiting only works when both people are trying.",
+      question: "When does patience turn into self-neglect?",
+      category: "Relationship",
+      },
+      
+      {
+      id: "s19",
+      slug: "tired-of-explaining-myself",
+      title: "I Got Tired of Explaining How I Felt",
+      intro: "At some point, you stop talking—not because you’re okay, but because you’re done.",
+      story: "I explained myself clearly. More than once. What bothered me, what hurt, what I needed. Not in anger, just honestly. They would listen, nod, even say they understood. And for a moment, I thought things would change. But they didn’t. The same patterns kept repeating. The same conversations, just in different words. Over time, I started saying less. Not because I had nothing to say—but because I didn’t see the point anymore. It’s a strange feeling, being unheard even when someone is right there in front of you.",
+      analysis: "Repeated invalidation leads to emotional withdrawal.",
+      lesson: "If someone truly understands, you won’t have to keep explaining the same pain.",
+      question: "How many times is enough before you stop trying to be understood?",
+      category: "Emotional stories",
+      },
+      
+      {
+      id: "s20",
+      slug: "missed-version-of-them-not-them",
+      title: "I Didn’t Miss Them, I Missed Who They Used to Be",
+      intro: "Letting go was hard because I kept remembering the beginning.",
+      story: "When I thought about leaving, my mind didn’t go to the bad days. It went to the start. The way they used to talk to me, the effort, the warmth, the little things that felt genuine. I held onto those memories like proof that things could go back to that. But they didn’t. And slowly, I realized something I had been avoiding—those moments weren’t who they are now. I wasn’t holding onto them. I was holding onto a version of them that no longer existed.",
+      analysis: "Attachment was rooted in the past, not the present reality.",
+      lesson: "Memories can keep you stuck in places you’ve already outgrown.",
+      question: "How do you let go of who someone used to be?",
+      category: "Emotional stories",
+      },
 ];
 
 function normalizeSlug(input: unknown): string | null {

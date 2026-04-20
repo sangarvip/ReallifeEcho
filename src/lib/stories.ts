@@ -194,6 +194,65 @@ export const STORIES: Story[] = [
       "How do you recognize one-sided relationships early?",
     category: "Relationship",
   },
+  {
+    id: "s11",
+    slug: "worked-overtime-loyal-company-let-go",
+    title: "I Gave Everything to My Job, Until They Let Me Go",
+    intro: "I stayed late, showed up early. In the end, I was just a number.",
+    story: "I never said no to extra work. Weekends, late nights, covering for others—I thought it mattered. My manager used to say, “We’re lucky to have you.” I believed that. Promotions came and went, but I told myself patience would pay off. Then one morning, HR called me in. Budget cuts, they said. Nothing personal. I packed my desk in silence. Years of effort reduced to a short conversation. On my way out, no one even looked up.",
+    analysis: "This highlights misplaced loyalty. Workplaces value output, not personal sacrifice.",
+    lesson: "Give your best, but don’t tie your worth to a company.",
+    question: "How do you set boundaries at work without feeling guilty?",
+    category: "Workplace",
+    },
+    
+    {
+    id: "s12",
+    slug: "friends-only-call-when-needed",
+    title: "They Only Remembered Me When They Needed Something",
+    intro: "I was always there for them. Just not the other way around.",
+    story: "Every time my phone rang, it was them needing help. Moving houses, borrowing money, venting about life—I showed up. I didn’t mind. That’s what friends do, right? But when I needed someone, it was different. Messages left on read. Calls not returned. “Sorry, I’ve been busy,” they’d say days later. One day it hit me—I wasn’t their friend. I was their backup plan.",
+    analysis: "This shows conditional friendship based on convenience.",
+    lesson: "Real friends show up without keeping score—but they still show up.",
+    question: "How do you tell the difference between real friends and convenient ones?",
+    category: "Friendship",
+    },
+    
+    {
+    id: "s13",
+    slug: "family-expectations-never-enough",
+    title: "No Matter What I Did, It Was Never Enough",
+    intro: "I kept trying to make them proud. I don’t think they ever noticed.",
+    story: "Good grades, a stable job, staying out of trouble—I did everything I thought I was supposed to. Every time I achieved something, I waited for that moment. A simple “we’re proud of you.” Instead, it was always followed by, “But what’s next?” or “You could do better.” At some point, I stopped sharing my wins. Not because I didn’t care—but because I was tired of feeling like I was always behind.",
+    analysis: "This reflects emotional neglect through constant pressure.",
+    lesson: "Validation shouldn’t be something you chase your whole life.",
+    question: "How do you stop seeking approval from people who never give it?",
+    category: "Family",
+    },
+    
+    {
+    id: "s14",
+    slug: "burnout-chasing-dream-lost-yourself",
+    title: "I Chased My Dream Until I Didn’t Recognize Myself",
+    intro: "Somewhere along the way, I lost the reason I started.",
+    story: "I had a goal and I was obsessed. Early mornings, sleepless nights, saying no to everything else—I thought that’s what it took. And maybe it did. But slowly, things changed. I stopped enjoying it. It became pressure, not passion. One day I looked at my work and felt nothing. No pride, no excitement. Just exhaustion. I got what I wanted, but it didn’t feel like mine anymore.",
+    analysis: "This shows burnout caused by over-identifying with a goal.",
+    lesson: "Dreams shouldn’t cost you your sense of self.",
+    question: "How do you know when it’s time to pause instead of push harder?",
+    category: "Emotional stories",
+    },
+    
+    {
+    id: "s15",
+    slug: "trusted-someone-shared-everything-betrayed",
+    title: "I Trusted Them With Everything, They Used It Against Me",
+    intro: "The worst kind of hurt comes from someone who knew you deeply.",
+    story: "I told them things I hadn’t told anyone. My fears, my past, things I was still trying to understand myself. They listened, supported me—or at least I thought they did. Then one argument changed everything. Suddenly, those same things became weapons. Words twisted, vulnerabilities exposed. I remember sitting there, not even angry—just shocked. Because I realized they hadn’t just hurt me. They had studied me.",
+    analysis: "This highlights betrayal through misuse of trust.",
+    lesson: "Be open, but be careful who you’re open with.",
+    question: "How do you rebuild trust after someone breaks it like that?",
+    category: "Trust",
+    },
 ];
 
 function normalizeSlug(input: unknown): string | null {
